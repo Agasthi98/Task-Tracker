@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Tasks from "./Tasks";
@@ -10,9 +10,15 @@ import { getTasks, addTask, deleteTask, toggleReminder } from "./controllers";
 const Main = () => {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
+  const renderAfterCalled = useRef(false);
 
   useEffect(() => {
-    getTasks(setTasks);
+    if (!renderAfterCalled.current) {
+      // your API call func
+      getTasks(setTasks);
+    }
+
+    renderAfterCalled.current = true;
   }, []);
 
   const addTaskHandler = (task) => {

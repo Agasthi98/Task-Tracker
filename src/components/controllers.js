@@ -1,6 +1,8 @@
 //Fetch Tasks
 export const fetchTasks = async () => {
-  const res = await fetch("http://localhost:5000/tasks");
+  const res = await fetch("http://localhost:5000/tasks", {
+    method: "GET",
+  });
   const data = await res.json();
   return data;
 };
@@ -11,7 +13,9 @@ export const getTasks = async (setTasks) => {
 };
 //Fetch Tasks by Id
 export const fetchTask = async (id) => {
-  const res = await fetch(`http://localhost:5000/tasks/${id}`);
+  const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+    method: "GET",
+  });
   const data = await res.json();
   return data;
 };
