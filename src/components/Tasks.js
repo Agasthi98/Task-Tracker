@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Task from "./Task";
+import AddTask from "./AddTask";
 
 const Tasks = ({ onDelete }) => {
   const [tasks, setTasks] = useState([
@@ -23,6 +24,11 @@ const Tasks = ({ onDelete }) => {
     },
   ]);
 
+  //Add task
+  const addTask = (task) => {
+    console.log(task);
+  };
+
   //Delete task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
@@ -39,6 +45,7 @@ const Tasks = ({ onDelete }) => {
 
   return (
     <>
+      <AddTask onAdd={addTask} />
       {tasks.length > 0
         ? tasks.map((task) => (
             <Task
