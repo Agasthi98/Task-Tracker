@@ -7,16 +7,22 @@
       "reminder": true
     },
     {
-      "text": "ggghg",
-      "day": "ggg",
-      "reminder": false,
-      "id": 8
-    },
-    {
       "text": "rew",
       "day": "wee",
       "reminder": false,
       "id": 10
+    },
+    {
+      "text": "12345",
+      "day": "asss",
+      "reminder": true,
+      "id": 11
+    },
+    {
+      "text": "vc",
+      "day": "cv",
+      "reminder": false,
+      "id": 12
     }
   ]
 }
