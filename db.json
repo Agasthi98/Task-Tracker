@@ -15,20 +15,14 @@
     {
       "text": "take task",
       "day": "day",
-      "reminder": true,
+      "reminder": false,
       "id": 3
     },
     {
-      "text": "ss",
-      "day": "sss",
-      "reminder": false,
-      "id": 4
-    },
-    {
-      "text": "dd",
-      "day": "dd",
+      "text": "ggghg",
+      "day": "ggg",
       "reminder": true,
-      "id": 5
+      "id": 8
     }
   ]
 }
