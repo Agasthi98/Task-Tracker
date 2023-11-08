@@ -23,6 +23,12 @@
       "day": "sss",
       "reminder": false,
       "id": 4
+    },
+    {
+      "text": "dd",
+      "day": "dd",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
